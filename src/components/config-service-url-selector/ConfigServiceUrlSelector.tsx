@@ -6,12 +6,16 @@ import TextField from "@mui/material/TextField";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 
-const { REACT_APP_CONFIG_SERVICE_URL } = process.env;
+// const { REACT_APP_CONFIG_SERVICE_URL } = process.env;
 
 const defaultOptions = [
   {
-    label: "Config Service URL",
-    value: REACT_APP_CONFIG_SERVICE_URL || "",
+    label: "PRD Config Service URL",
+    value: "https://config.multisig.mantle.xyz",
+  },
+  {
+    label: "STG Config Service URL",
+    value: "https://config.staging.multisig.mantle.xyz",
   },
 ];
 
